@@ -1,5 +1,8 @@
 {
   "appIsExample": false,
+  "appLayout": {
+    "type": "FLUID"
+  },
   "applicationDetail": {
     "themeSetting": {
       "appMaxWidth": "LARGE",
@@ -17,6 +20,9 @@
       "isDefault": true
     }
   ],
+  "unpublishedAppLayout": {
+    "type": "FLUID"
+  },
   "unpublishedApplicationDetail": {
     "themeSetting": {
       "appMaxWidth": "LARGE",
