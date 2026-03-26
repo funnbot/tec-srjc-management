@@ -6,6 +6,9 @@
   "unpublishedAction": {
     "actionConfiguration": {
       "encodeParamsToggle": true,
+      "formData": {
+        "command": "GOOGLE_DRIVE_SEARCH_FOLDERS"
+      },
       "paginationType": "NONE",
       "timeoutInMillisecond": 10000
     },
@@ -16,6 +19,7 @@
       "name": "TEC SRJC Drive",
       "pluginId": "googledrive"
     },
+    "dynamicBindingPathList": [],
     "name": "Api1",
     "pageId": "Page1",
     "runBehaviour": "MANUAL",
