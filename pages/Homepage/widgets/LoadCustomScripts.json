@@ -3,9 +3,9 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 11,
+  "bottomRow": 12,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-  "defaultModel": "",
+  "defaultModel": "{}",
   "dynamicBindingPathList": [
     {
       "key": "theme"
@@ -24,7 +24,7 @@
   "isCanvas": false,
   "isLoading": false,
   "isSearchWildcard": true,
-  "isVisible": false,
+  "isVisible": true,
   "key": "e8lrpgcrpi",
   "leftColumn": 3,
   "maxDynamicHeight": 9000,
@@ -39,9 +39,10 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 7,
+  "shouldScrollContents": true,
   "srcDoc": {
     "css": "",
-    "html": "<script src=\"https://accounts.google.com/gsi/client\" async></script>\n",
+    "html": "<script src=\"https://accounts.google.com/gsi/client\" async></script>\n\n<div></div>",
     "js": ""
   },
   "theme": "{{appsmith.theme}}",
@@ -49,7 +50,7 @@
   "type": "CUSTOM_WIDGET",
   "uncompiledSrcDoc": {
     "css": "",
-    "html": "<script src=\"https://accounts.google.com/gsi/client\" async></script>\n",
+    "html": "<script src=\"https://accounts.google.com/gsi/client\" async></script>\n\n<div></div>",
     "js": ""
   },
   "version": 1,
