@@ -1,0 +1,10 @@
+{
+  "accessor": [
+    "google_oauth_gsi"
+  ],
+  "defs": "{\"!name\":\"LIB/google_oauth_gsi\",\"google_oauth_gsi\":{\"GoogleOAuthProvider\":{\"!type\":\"fn()\",\"prototype\":{\"useLoadGsiScript\":{\"!type\":\"fn()\"},\"useGoogleLogin\":{\"!type\":\"fn()\"},\"useGoogleLoginPostponed\":{\"!type\":\"fn()\"},\"useGoogleOneTapLogin\":{\"!type\":\"fn()\"},\"useGoogleOneTapLoginPostponed\":{\"!type\":\"fn()\"},\"useRenderButton\":{\"!type\":\"fn()\"},\"useRenderButtonPostponed\":{\"!type\":\"fn()\"}}},\"googleLogout\":{\"!type\":\"fn()\",\"prototype\":{}},\"hasGrantedAllScopesGoogle\":{\"!type\":\"fn()\",\"prototype\":{}},\"hasGrantedAnyScopeGoogle\":{\"!type\":\"fn()\",\"prototype\":{}}}}",
+  "name": "google_oauth_gsi",
+  "uidString": "google_oauth_gsi_https://cdn.jsdelivr.net/npm/google-oauth-gsi@4.0.1/+esm",
+  "url": "https://cdn.jsdelivr.net/npm/google-oauth-gsi@4.0.1/+esm",
+  "version": "4.0.1"
+}

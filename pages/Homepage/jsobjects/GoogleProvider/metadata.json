@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "69c46970eaf7d128854688b0_d44dbb56-8f2b-4e9f-b30e-f5139920d19e",
+  "id": "Homepage_GoogleProvider",
+  "unpublishedCollection": {
+    "name": "GoogleProvider",
+    "pageId": "Homepage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "googleProvider",
+        "value": "new google_oauth_gsi.GoogleOAuthProvider({\n  clientId: \"667459375894-3nkhrjpsluhp2genqkr4kl45gdbbv8hb.apps.googleusercontent.com\",\n  onScriptLoadError: () => console.log('onScriptLoadError'),\n  onScriptLoadSuccess: () => console.log('onScriptLoadSuccess')\n})"
+      }
+    ]
+  }
+}
