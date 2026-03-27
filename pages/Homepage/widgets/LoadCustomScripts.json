@@ -1,0 +1,58 @@
+{
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 11,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultModel": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [],
+  "events": [],
+  "isCanvas": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": false,
+  "key": "e8lrpgcrpi",
+  "leftColumn": 3,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 65,
+  "mobileLeftColumn": 17,
+  "mobileRightColumn": 40,
+  "mobileTopRow": 35,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 15.609375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 7,
+  "srcDoc": {
+    "css": "",
+    "html": "<script src=\"https://accounts.google.com/gsi/client\" async></script>\n",
+    "js": ""
+  },
+  "theme": "{{appsmith.theme}}",
+  "topRow": 5,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": "",
+    "html": "<script src=\"https://accounts.google.com/gsi/client\" async></script>\n",
+    "js": ""
+  },
+  "version": 1,
+  "widgetId": "ocj4pzkigt",
+  "widgetName": "LoadCustomScripts"
+}

@@ -1,6 +1,6 @@
 {
   "gitSyncId": "69c46970eaf7d128854688b0_76962736-6614-4cff-bd89-fc38b05e66c1",
-  "id": "Page1_Api1",
+  "id": "Homepage_Api1",
   "pluginId": "googledrive",
   "pluginType": "EXTERNAL_SAAS",
   "unpublishedAction": {
@@ -21,7 +21,7 @@
     },
     "dynamicBindingPathList": [],
     "name": "Api1",
-    "pageId": "Page1",
+    "pageId": "Homepage",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
