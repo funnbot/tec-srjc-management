@@ -1,11 +1,12 @@
 {
-  "gitSyncId": "69c46970eaf7d128854688b0_6812e468-ee3c-4300-ac19-ea2fb25c1d98",
+  "gitSyncId": "69c46970eaf7d128854688b0_502fde98-b963-4ebb-9c61-75adfa530e12",
   "unpublishedPage": {
+    "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 380,
+          "bottomRow": 1170,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
@@ -25,7 +26,7 @@
         }
       }
     ],
-    "name": "Page1",
-    "slug": "page1"
+    "name": "AuthenticateExchange",
+    "slug": "authenticateexchange"
   }
 }

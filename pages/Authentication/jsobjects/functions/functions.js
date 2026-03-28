@@ -25,7 +25,7 @@ export default {
 		const { data, error } = await supa.auth.signInWithOAuth({
 			provider: "google",
 			options: {
-				//redirectTo: 'https://umawafpwexelguurmcna.supabase.co/auth/v1/callback',
+				redirectTo: 'https://umawafpwexelguurmcna.supabase.co/auth/v1/callback',
 				skipBrowserRedirect: true,
 			},
 		})
