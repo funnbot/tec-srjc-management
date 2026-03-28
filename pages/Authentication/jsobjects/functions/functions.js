@@ -25,7 +25,7 @@ export default {
 		const { data, error } = await supa.auth.signInWithOAuth({
 			provider: "google",
 			options: {
-				redirectTo: 'https://umawafpwexelguurmcna.supabase.co/auth/v1/callback',
+				redirectTo: 'https://tec-srjc.appsmith.com/app/tec-management-console/authenticateexchange-69c835cafc5ec130542dd275',
 				skipBrowserRedirect: true,
 			},
 		})
