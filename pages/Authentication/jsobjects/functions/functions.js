@@ -22,14 +22,17 @@ export default {
 
 	signIn: async () => {
 		const supa = supabase.createClient(functions.SUPABASE_URL, functions.SUPABASE_PUBLISHABLE_KEY);
-		const { data, error } = await supabase.auth.signInWithOAuth({
+		const { data, error } = await supa.auth.signInWithOAuth({
 			provider: "google",
 			options: {
-				redirectTo: 'https://umawafpwexelguurmcna.supabase.co/auth/v1/callback',
+				//redirectTo: 'https://umawafpwexelguurmcna.supabase.co/auth/v1/callback',
+				skipBrowserRedirect: true,
 			},
 		})
+		console.log(data)
+		// console.log(error)
 		if (data.url) {
-			navigateTo(data.url) // use the redirect API for your server framework
+			navigateTo(data.url, {}, 'NEW_WINDOW') // use the redirect API for your server framework
 		}
 		// const password = inp_password.text;
 		// 
