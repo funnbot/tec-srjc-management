@@ -1,0 +1,28 @@
+{
+  "gitSyncId": "69c46970eaf7d128854688b0_79cf3dfa-c19d-48ee-bd8c-8312a1256dc2",
+  "id": "Authentication_functions",
+  "unpublishedCollection": {
+    "name": "functions",
+    "pageId": "Authentication",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "SUPABASE_URL",
+        "value": "\"https://umawafpwexelguurmcna.supabase.co\""
+      },
+      {
+        "name": "SUPABASE_PUBLISHABLE_KEY",
+        "value": "\"sb_publishable_TyOoXxO9vjcqhVm6ZRGPvg_XRFn-DwX\""
+      },
+      {
+        "name": "client",
+        "value": "undefined"
+      },
+      {
+        "name": "defaultTab",
+        "value": "'Sign In'"
+      }
+    ]
+  }
+}

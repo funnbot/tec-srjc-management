@@ -1,13 +1,12 @@
 {
-  "gitSyncId": "69c46970eaf7d128854688b0_9c997b9f-e8a3-4491-9a38-74337fea088b",
+  "gitSyncId": "null_ea2bb0ed-df1d-4ff6-a85a-a67ed25fd633",
   "unpublishedPage": {
-    "customSlug": "page1",
     "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 610,
+          "bottomRow": 640,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
@@ -28,7 +27,7 @@
         }
       }
     ],
-    "name": "Homepage",
-    "slug": "homepage"
+    "name": "Authentication",
+    "slug": "authentication"
   }
 }
