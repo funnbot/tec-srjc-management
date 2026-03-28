@@ -9,7 +9,7 @@ export default {
 	},
 
 	generatePasswordHash: async () => {
-		return dcodeIO.bcrypt.hashSync(inp_registerPassword.text, 10);
+		return dcodeIO.bcrypt.hashSync("", 10);
 	},
 
 	verifyHash: async (password, hash) => {
