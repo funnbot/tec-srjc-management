@@ -32,7 +32,7 @@ export default {
 		console.log(data)
 		// console.log(error)
 		if (data.url) {
-			navigateTo(data.url, {}, 'NEW_WINDOW') // use the redirect API for your server framework
+			navigateTo(data.url, {}, 'SAME_WINDOW') // use the redirect API for your server framework
 		}
 		// const password = inp_password.text;
 		// 
