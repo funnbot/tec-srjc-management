@@ -34,10 +34,6 @@
       "isDefault": true
     },
     {
-      "id": "Page1",
-      "isDefault": false
-    },
-    {
       "id": "AuthenticateExchange",
       "isDefault": false
     }
