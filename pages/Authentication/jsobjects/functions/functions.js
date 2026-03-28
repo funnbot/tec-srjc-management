@@ -1,8 +1,6 @@
 export default {
 	SUPABASE_URL: "https://umawafpwexelguurmcna.supabase.co",
 	SUPABASE_PUBLISHABLE_KEY: "sb_publishable_TyOoXxO9vjcqhVm6ZRGPvg_XRFn-DwX",
-	client: undefined,
-
 
 	defaultTab: 'Sign In',
 
@@ -22,23 +20,29 @@ export default {
 		return jsonwebtoken.sign(user, 'secret', {expiresIn: 60*60});
 	},
 
-	createClient: () => {
-		functions.client = supabase.createClient(functions.SUPABASE_URL, functions.SUPABASE_PUBLISHABLE_KEY);
-	},
-	
 	signIn: async () => {
+		const supa = supabase.createClient(functions.SUPABASE_URL, functions.SUPABASE_PUBLISHABLE_KEY);
+		const { data, error } = await supabase.auth.signInWithOAuth({
+			provider: "google",
+			options: {
+				redirectTo: 'https://umawafpwexelguurmcna.supabase.co/auth/v1/callback',
+			},
+		})
+		if (data.url) {
+			navigateTo(data.url) // use the redirect API for your server framework
+		}
 		// const password = inp_password.text;
-// 
+		// 
 		// const [user] = await findUserByEmail.run();
-// 
+		// 
 		// if (user && this.verifyHash(password, user?.password_hash)) {
-			// storeValue('token', await this.createToken(user))
-				// .then(() => updateLogin.run({
-				// id: user.id
-			// }))
-				// .then(() => showAlert('Register Success', 'success'))
+		// storeValue('token', await this.createToken(user))
+		// .then(() => updateLogin.run({
+		// id: user.id
+		// }))
+		// .then(() => showAlert('Register Success', 'success'))
 		// } else {
-			// return showAlert('Invalid emaill/password combination', 'error');
+		// return showAlert('Invalid emaill/password combination', 'error');
 		// }
 	},
 
@@ -46,10 +50,10 @@ export default {
 		// const passwordHash = await this.generatePasswordHash();
 		// const [user] = await createUser.run({passwordHash});
 		// if (user) {
-			// storeValue('token', await this.createToken(user))
-			// showAlert('Register Success', 'success');
+		// storeValue('token', await this.createToken(user))
+		// showAlert('Register Success', 'success');
 		// } else {
-			// return showAlert('Error creating new user', 'error');
+		// return showAlert('Error creating new user', 'error');
 		// }
 	},
 }
