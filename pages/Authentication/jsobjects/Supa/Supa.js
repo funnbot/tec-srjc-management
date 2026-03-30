@@ -12,7 +12,7 @@ export default {
 		},
 		setItem: async (key, value) => {
 			console.log("Set: ", key, " = ", value)
-			return storeValue(key, value, false)
+			return storeValue(key, value, true)
 		}
 	},
 
