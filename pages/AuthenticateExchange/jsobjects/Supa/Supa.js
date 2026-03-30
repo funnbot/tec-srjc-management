@@ -9,6 +9,7 @@ export default {
 			return appsmith.store[key]
 		},
 		removeItem: async (key) =>  {
+			console.log("Remove: ", key)
 			return removeValue(key);
 		},
 		setItem: async (key, value) => {

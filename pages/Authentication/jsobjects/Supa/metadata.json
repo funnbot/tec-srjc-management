@@ -17,7 +17,7 @@
       },
       {
         "name": "AppsmithStore",
-        "value": "{\n  getItem: async key => {\n    console.log(\"Get: \", key);\n    return appsmith.store[key];\n  },\n  removeItem: async key => {\n    return removeValue(key);\n  },\n  setItem: async (key, value) => {\n    console.log(\"Set: \", key, \" = \", value);\n    return storeValue(key, value, true);\n  }\n}"
+        "value": "{\n  getItem: async key => {\n    console.log(\"Get: \", key);\n    return appsmith.store[key];\n  },\n  removeItem: async key => {\n    console.log(\"Remove: \", key);\n    return removeValue(key);\n  },\n  setItem: async (key, value) => {\n    console.log(\"Set: \", key, \" = \", value);\n    return storeValue(key, value, true);\n  }\n}"
       }
     ]
   }
