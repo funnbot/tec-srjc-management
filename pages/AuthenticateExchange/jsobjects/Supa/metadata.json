@@ -1,0 +1,24 @@
+{
+  "gitSyncId": "69c46970eaf7d128854688b0_56fb32b5-afec-45a1-873d-4931b87bf502",
+  "id": "AuthenticateExchange_Supa",
+  "unpublishedCollection": {
+    "name": "Supa",
+    "pageId": "AuthenticateExchange",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "SUPABASE_URL",
+        "value": "\"https://umawafpwexelguurmcna.supabase.co\""
+      },
+      {
+        "name": "SUPABASE_PUBLISHABLE_KEY",
+        "value": "\"sb_publishable_TyOoXxO9vjcqhVm6ZRGPvg_XRFn-DwX\""
+      },
+      {
+        "name": "AppsmithStore",
+        "value": "{\n  getItem: async key => {\n    console.log(\"Get: \", key);\n    return appsmith.store[key];\n  },\n  removeItem: async key => {\n    return removeValue(key);\n  },\n  setItem: async (key, value) => {\n    console.log(\"Set: \", key, \" = \", value);\n    return storeValue(key, value, true);\n  }\n}"
+      }
+    ]
+  }
+}

@@ -1,8 +1,8 @@
 {
   "gitSyncId": "69c46970eaf7d128854688b0_1906f250-d746-494f-b612-1a67f311d24f",
-  "id": "AuthenticateExchange_JSObject1",
+  "id": "AuthenticateExchange_Auth",
   "unpublishedCollection": {
-    "name": "JSObject1",
+    "name": "Auth",
     "pageId": "AuthenticateExchange",
     "pluginId": "js-plugin",
     "pluginType": "JS",

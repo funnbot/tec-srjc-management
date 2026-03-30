@@ -8,14 +8,6 @@
     "pluginType": "JS",
     "variables": [
       {
-        "name": "SUPABASE_URL",
-        "value": "\"https://umawafpwexelguurmcna.supabase.co\""
-      },
-      {
-        "name": "SUPABASE_PUBLISHABLE_KEY",
-        "value": "\"sb_publishable_TyOoXxO9vjcqhVm6ZRGPvg_XRFn-DwX\""
-      },
-      {
         "name": "defaultTab",
         "value": "'Sign In'"
       }

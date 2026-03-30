@@ -1,6 +1,5 @@
 export default {
-	SUPABASE_URL: "https://umawafpwexelguurmcna.supabase.co",
-	SUPABASE_PUBLISHABLE_KEY: "sb_publishable_TyOoXxO9vjcqhVm6ZRGPvg_XRFn-DwX",
+
 
 	defaultTab: 'Sign In',
 
@@ -21,16 +20,13 @@ export default {
 	},
 
 	signIn: async () => {
-		const supa = supabase.createClient(functions.SUPABASE_URL, functions.SUPABASE_PUBLISHABLE_KEY);
-		const { data, error } = await supa.auth.signInWithOAuth({
+		const { data, error } = await Supa.client().auth.signInWithOAuth({
 			provider: "google",
 			options: {
 				redirectTo: 'https://tec-srjc.appsmith.com/app/tec-management-console/authenticateexchange-69c835cafc5ec130542dd275',
 				skipBrowserRedirect: true,
 			},
 		})
-		console.log(data)
-		// console.log(error)
 		if (data.url) {
 			navigateTo(data.url, {}, 'SAME_WINDOW') // use the redirect API for your server framework
 		}
