@@ -1,0 +1,3 @@
+{{
+{ auth_code: this.params.code, code_verifier: this.params.verifier }
+}}
