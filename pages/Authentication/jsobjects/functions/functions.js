@@ -23,7 +23,8 @@ export default {
 		const { data, error } = await Supa.client().auth.signInWithOAuth({
 			provider: "google",
 			options: {
-				redirectTo: 'https://tec-srjc.appsmith.com/app/tec-management-console/authenticateexchange-69c835cafc5ec130542dd275',
+				redirectTo: 'https://umawafpwexelguurmcna.supabase.co/functions/v1/code-exchange',
+				//redirectTo: 'https://tec-srjc.appsmith.com/app/tec-management-console/authenticateexchange-69c835cafc5ec130542dd275',
 				skipBrowserRedirect: true,
 			},
 		})

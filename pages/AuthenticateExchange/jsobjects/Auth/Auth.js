@@ -6,7 +6,7 @@ export default {
 	async onLoad () {
 		const code = appsmith.URL.queryParams?.code;
 		if (Auth.isNonEmptyString(code)) {
-			Supa.client().auth.exchangeCodeForSession(code)
+
 		} else {
 			console.warn("No code provided in query params, redirecting...")
 			if (appsmith.mode === "VIEW") {
