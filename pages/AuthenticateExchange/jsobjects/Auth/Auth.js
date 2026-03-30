@@ -11,15 +11,26 @@ export default {
 		}
 	},
 
+	unquote(str) {
+		if (str.startsWith('"') && str.endsWith('"')) {
+			return str.slice(1, -1)
+		}
+		return str
+	},
+
 	async onLoad () {
 		const code = appsmith.URL.queryParams?.code;
-		// if (!Auth.isNonEmptyString(code)) {
-		// await Auth.fail("No code provided in query params");
-		// return;
-		// }
+		if (!Auth.isNonEmptyString(code)) {
+			await Auth.fail("No code provided in query params");
+			return;
+		}
 
-		const verifier = appsmith.store['sb-umawafpwexelguurmcna-auth-token-code-verifier']
-		console.log(verifier)
+		let verifier = appsmith.store['sb-umawafpwexelguurmcna-auth-token-code-verifier']
+		if (!Auth.isNonEmptyString(verifier)) {
+			await Auth.fail("No code verifier found in local storage.")
+			return;
+		}
+		verifier = Auth.unquote(verifier);
 		if (!Auth.isNonEmptyString(verifier)) {
 			await Auth.fail("No code verifier found in local storage.")
 			return;

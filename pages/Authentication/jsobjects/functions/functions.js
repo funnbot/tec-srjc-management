@@ -24,8 +24,9 @@ export default {
 			provider: "google",
 			options: {
 				//redirectTo: 'https://umawafpwexelguurmcna.supabase.co/functions/v1/code-exchange',
-				redirectTo: 'https://tec-srjc.appsmith.com/app/tec-management-console/authenticateexchange-69c835cafc5ec130542dd275',
-				skipBrowserRedirect: true,
+				// branch=master necessary for bug https://github.com/appsmithorg/appsmith/issues/41185
+				redirectTo: 'https://tec-srjc.appsmith.com/app/tec-management-console/authenticateexchange-69c835cafc5ec130542dd275?branch=master',
+				skipBrowserRedirect: true
 			},
 		})
 		if (data.url) {
