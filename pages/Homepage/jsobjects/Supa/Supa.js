@@ -18,7 +18,7 @@ export default {
 		}
 	},
 
-	client: () => {
+	client() {
 		if (globalThis.supa === undefined) {
 			globalThis.supa = supabase.createClient(Supa.SUPABASE_URL, Supa.SUPABASE_PUBLISHABLE_KEY, {
 				auth: {
@@ -30,6 +30,6 @@ export default {
 		}
 		return globalThis.supa
 	}
-	
-	
+
+
 }
