@@ -25,7 +25,7 @@ export default {
 			options: {
 				//redirectTo: 'https://umawafpwexelguurmcna.supabase.co/functions/v1/code-exchange',
 				// branch=master necessary for bug https://github.com/appsmithorg/appsmith/issues/41185
-				redirectTo: 'https://tec-srjc.appsmith.com/app/tec-management-console/authenticateexchange-69c835cafc5ec130542dd275?branch=master',
+				redirectTo: 'https://tec-srjc.appsmith.com/app/tec-management-console/authenticateexchange-69c835cafc5ec130542dd275/edit?branch=master',
 				skipBrowserRedirect: true
 			},
 		})

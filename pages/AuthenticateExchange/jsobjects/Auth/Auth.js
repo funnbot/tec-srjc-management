@@ -25,18 +25,15 @@ export default {
 			return;
 		}
 
-		let verifier = appsmith.store['sb-umawafpwexelguurmcna-auth-token-code-verifier']
-		if (!Auth.isNonEmptyString(verifier)) {
-			await Auth.fail("No code verifier found in local storage.")
-			return;
+		const {data, error} = await Supa.client().auth.exchangeCodeForSession(code);
+		
+		if (error) {
+			await Auth.fail("code exchange failed");
+			return;	
 		}
-		verifier = Auth.unquote(verifier);
-		if (!Auth.isNonEmptyString(verifier)) {
-			await Auth.fail("No code verifier found in local storage.")
-			return;
-		}
-
-		const response = await CodeExchange.run({ code, verifier });
-		return response;
+		
+		navigateTo('Homepage', {}, 'SAME_WINDOW');
+		//await CodeExchange.run({ code, verifier });
+		//if (CodeExchange.responseMeta.statusCode)
 	}
 }
